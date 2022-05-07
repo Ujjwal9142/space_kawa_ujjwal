@@ -1,0 +1,215 @@
+.users {
+  margin: 0px 120px 0px 120px;
+  font-family: "Roboto Mono", monospace;
+  font-style: normal;
+}
+
+.users__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.selected__user__header__pic {
+  margin: 82px 64px;
+  border-radius: 99px;
+}
+
+.users__header__left > h2 {
+  font-weight: bolder;
+}
+
+.users__header__right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.users__header__right > p {
+  margin: 0px 0px 0px 24px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.selected__user__header {
+  display: flex;
+  width: 996px;
+  height: 291px;
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 120px;
+  margin-top: 72px;
+  border-radius: 16px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.selected__user__header__details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 30px;
+}
+
+.selected__user__header__gender {
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.selected__user__header__details > h2 {
+  margin-bottom: 16px;
+  margin-top: 64px;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: -1.85px;
+  text-decoration-line: underline;
+  color: #e16259;
+}
+
+.selected__user__header__details > p {
+  margin-bottom: 8px;
+  margin-top: 0px;
+  font-size: 20px;
+  line-height: 145%;
+  letter-spacing: -1.85px;
+}
+
+.all__users__details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.single__user__details {
+  cursor: pointer;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  width: 282px;
+  height: 110px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: left !important;
+  align-items: left !important;
+  padding: 12px 16px;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform 450ms;
+}
+
+.single__user__details:hover {
+  transform: scale(1.08);
+}
+
+.single__user__details > .single__user__details__header > p {
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.single__selected > .single__user__details__header > p {
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.single__user__details > .single__user__details__middle > h4 {
+  margin-top: 10px !important;
+  margin-bottom: 8px !important;
+  font-size: 22px;
+  line-height: 135%;
+  color: #000000;
+  word-wrap: break-word;
+}
+
+.single__selected > .single__user__details__middle > h4 {
+  margin-top: 10px !important;
+  margin-bottom: 8px !important;
+  font-size: 22px;
+  line-height: 135%;
+  color: #ffffff;
+  word-wrap: break-word;
+}
+
+.single__user__details > .single__user__details__last > p {
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+  color: #e16259;
+  font-size: 15px;
+  line-height: 150%;
+  word-wrap: break-word;
+}
+
+.single__selected > .single__user__details__last > p {
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 150%;
+  word-wrap: break-word;
+}
+
+.single__selected {
+  cursor: pointer;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  width: 282px;
+  height: 110px;
+  background-color: #a259ff;
+  display: flex;
+  flex-direction: column;
+  padding: 12px 16px;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform 450ms;
+}
+
+.single__selected:hover {
+  transform: scale(1.08);
+}
+
+.single__user__details__header,
+.single__user__details__middle,
+.single__user__details__last {
+  align-self: flex-start;
+}
+
+.loading__display {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  .selected__user__header {
+    display: flex;
+    width: 700px;
+    height: 291px;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+    margin-top: 72px;
+    border-radius: 16px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .selected__user__header {
+    display: flex;
+    width: 450px;
+    height: 420px;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+    margin-top: 72px;
+    border-radius: 16px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  }
+}
